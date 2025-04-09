@@ -47,8 +47,6 @@ for item in wordcloud_df['features'].dropna().apply(ast.literal_eval):
 
 feature_text = ' '.join(main)
 
-plt.rcParams["font.family"] = "Arial"
-
 wordcloud = WordCloud(width = 800, height = 800,
                       background_color ='white',
                       stopwords = set(['s']),  # Any stopwords you'd like to exclude
